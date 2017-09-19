@@ -1,4 +1,5 @@
 # Alpine-NGINX-PHPFPM
+[![](https://images.microbadger.com/badges/image/rjarow/alpine-nginx-phpfpm.svg)](https://microbadger.com/images/rjarow/alpine-nginx-phpfpm "Get your own image badge on microbadger.com")
 
 This is a Docker Container that uses alpine 3.6, adds the 1.20.00 version of s6 overlay, installs latest nginx, php-fpm and some common php modules.
 
