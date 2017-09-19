@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
 
-# chown /usr/html
+mkdir -p /usr/html
 chown -R nginx:nginx /usr/html
 mkdir -p /usr/logs/php-fpm
 mkdir -p /usr/logs/nginx
