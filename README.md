@@ -66,6 +66,84 @@ You can then run other domains behind this same proxy just by specifying the VIR
 
 Another suggestion would be to run this with docker-compose to tie into a sql database server.
 
+Additional PHP Modules:
+
+```
+
+List of available modules in Alpine Linux, not all these are installed.
+
+In order to install a php module do, (leave out the version number i.e. -5.6.11-r0
+
+docker exec <image_id> apk add <pkg_name>
+docker restart <image_name>
+Example:
+
+docker exec <image_id> apk add php7-soap
+docker restart <image_name>
+php7-common
+php7-pdo_sqlite
+php7-pear
+php7-ftp
+php7-imap
+php7-mysqli
+php7-json
+php7-mbstring
+php7-soap
+php7-litespeed
+php7-sockets
+php7-bcmath
+php7-opcache
+php7-dom
+php7-zlib
+php7-gettext
+php7-fpm
+php7-intl
+php7-openssl
+php7-session
+php7-mcrypt
+php7-pdo_mysql
+php7-embed
+php7-xmlrpc
+php7-wddx
+php7-dba
+php7-ldap
+php7-xsl
+php7-exif
+php7-pdo_dblib
+php7-bz2
+php7-pdo
+php7-pspell
+php7-sysvmsg
+php7-gmp
+php7-apache2
+php7-pdo_odbc
+php7-shmop
+php7-ctype
+php7-phpdbg
+php7-enchant
+php7-sysvsem
+php7-sqlite3
+php7-odbc
+php7-pcntl
+php7-calendar
+php7-xmlreader
+php7-snmp
+php7-zip
+php7-posix
+php7-iconv
+php7-curl
+php7-doc
+php7-gd
+php7-xml
+php7-dev
+php7-cgi
+php7-sysvshm
+php7-pgsql
+php7-tidy
+php7-pdo_pgsql
+php7-phar
+php7-mysqlnd
+```
 
 ## Built With
 
