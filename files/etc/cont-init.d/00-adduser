@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+
+PUID=${PUID:-1050}
+PGID=${PGID:-1050}
+
+groupmod -o -g "$PGID" nginx
+usermod -o -u "$PUID" nginx
