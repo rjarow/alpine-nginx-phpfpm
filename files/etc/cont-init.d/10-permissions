@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bash
+
+mkdir -p /usr/html
+chown -R nginx:nginx /usr/html
+mkdir -p /usr/logs/php-fpm
+mkdir -p /usr/logs/nginx
+mkdir -p /tmp/nginx
+chown nginx /tmp/nginx
