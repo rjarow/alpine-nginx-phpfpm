@@ -1,7 +1,7 @@
 # Alpine-NGINX-PHPFPM (x86_64)
 [![](https://images.microbadger.com/badges/image/rjarow/alpine-nginx-phpfpm.svg)](https://microbadger.com/images/rjarow/alpine-nginx-phpfpm "Get your own image badge on microbadger.com")
 
-This is a Docker Container that uses alpine 3.6, adds the 1.20.00 version of s6 overlay, installs latest nginx, php-fpm and some common php modules.
+This is a Docker Container that uses alpine 3.6, adds s6 overlay(process manager), installs latest nginx, php-fpm and some common php modules.
 
 I have also included mysql-client so that you can interact with a MySQL DB container from within this container.
 
