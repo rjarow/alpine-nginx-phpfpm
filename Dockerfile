@@ -1,4 +1,4 @@
-FROM rjarow/alpine64-s6
+FROM rjarow/alpine64-s6:dev
 LABEL maintainer "Rich J github.com/rjarow" architecture="AMD64/x86_64"
 
 RUN apk update && \
