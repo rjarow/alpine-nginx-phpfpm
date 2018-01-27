@@ -13,9 +13,10 @@ install:
 script:
 - docker ps | grep -q anp
 - export TAG=`if [[ $TRAVIS_PULL_REQUEST == "false" ]] && [[ $TRAVIS_BRANCH == "master"
-  ]]; then echo "latest"; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi`
+  ]]; then echo "latest"; else echo $TRAVIS_BRANCH; fi`
 - export REPO=containah/alpine-nginx-phpfpm
-- docker build -t $REPO:$TAG -f Dockerfile .
+  echo $REPO:TAG
+- docker build -t $REPO:$TAG .
 after_success:
 - docker login -u=$DOCKER_USER -p=$DOCKER_PASS
 - if [[ $TRAVIS_PULL_REQUEST == "false" ]] && [[ $TRAVIS_BRANCH == "master" ]]; then
