@@ -15,7 +15,7 @@ script:
 - export TAG=`if [[ $TRAVIS_PULL_REQUEST == "false" ]] && [[ $TRAVIS_BRANCH == "master"
   ]]; then echo "latest"; else echo $TRAVIS_BRANCH; fi`
 - export REPO=containah/alpine-nginx-phpfpm
-  echo $REPO:TAG
+- echo $REPO:$TAG
 - docker build -t $REPO:$TAG .
 after_success:
 - docker login -u=$DOCKER_USER -p=$DOCKER_PASS
