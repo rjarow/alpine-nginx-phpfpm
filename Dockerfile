@@ -17,7 +17,8 @@ RUN apk update && \
     # Delete cache
     rm -rf /var/cache/apk/*
 
-RUN \ # Modify PHP Settings
+RUN \
+    # Modify PHP Settings
     sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php7/php.ini && \
     sed -i 's/expose_php = On/expose_php = Off/g' /etc/php7/php.ini && \
     # Allow nginx user a bash shell
