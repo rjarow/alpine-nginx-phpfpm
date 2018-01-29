@@ -25,8 +25,7 @@ RUN \
     sed -i "s/nginx:x:100:101:nginx:\/var\/lib\/nginx:\/sbin\/nologin/nginx:x:100:101:nginx:\/usr:\/bin\/bash/g" /etc/passwd && \
     sed -i "s/nginx:x:100:101:nginx:\/var\/lib\/nginx:\/sbin\/nologin/nginx:x:100:101:nginx:\/usr:\/bin\/bash/g" /etc/passwd- && \
     # Link executables
-    ln -s /sbin/php-fpm7 /sbin/php-fpm && \
-    ln -s /usr/bin/php7 /usr/bin/php
+    ln -s /sbin/php-fpm7 /sbin/php-fpm
 
 COPY files/ /
 
