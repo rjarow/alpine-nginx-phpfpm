@@ -148,7 +148,6 @@ php7-mysqlnd
 
 ## Built With
 
-* [Atom](https://atom.io/) - My favorite editor
 * [Docker](https://docker.com) - Obviously?
 * [Alpine](alpinelinux.org) - The tiny linux!
 * [s6-overlay](https://github.com/just-containers/s6-overlay) - Making Docker play nice with processes.
@@ -162,8 +161,3 @@ php7-mysqlnd
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-## Acknowledgments
-
-* Everyone making beautiful efficient Docker Images
-* Hi Mom!
